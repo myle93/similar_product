@@ -22,6 +22,12 @@ def train_val_test_split(data):
     val, test = train_test_split(tmp, train_size=0.5)
     return train, val, test
 
+def pair_category_mapper(data, category, filename):
+    with jsonlines.open(filename, 'w') as js:
+        for ID1, ID2 in data:
+            js.write({"IDs": [ID1, ID2], 'Category': category})
+    
+
 
 def write_training_data(data_name, data):
     """Saves training dataset into txt and jsonl-files."""
