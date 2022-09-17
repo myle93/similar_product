@@ -1,0 +1,33 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+# Manually Added
+appsettings.*.json
+.vscode/ 
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+*.pickle
+*.json.gz
+*.ipynb_checkpoints
+*.pyc
+
+
+# Build results
+[Dd]ebug
+[Dd]ebugPublic
+[Rr]elease
+[Rr]eleases
+x64
+x86
+bld
+[Bb]in
+[Oo]bj
+[Ll]og
+
+# Visual Studio 2015 cache/options directory
+.vs/
