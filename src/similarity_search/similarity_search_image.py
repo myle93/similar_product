@@ -5,6 +5,7 @@ from scipy import spatial
 from keras.models import load_model
 from .metric import *
 from tqdm import tqdm
+import tensorflow as tf
 
 
 # Make model
